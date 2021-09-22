@@ -11,7 +11,7 @@ node index.js --output output.csv --ignore HTTP_308 --src example.txt
 
 Using the `--ignore` option allows you to skip certain broken links.
 
-## Examples
+## Examples
 
 This input from [example.txt](example.txt):
 ```
