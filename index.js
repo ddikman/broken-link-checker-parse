@@ -13,8 +13,6 @@ if (!options.ignore) {
   options.ignore = []
 }
 
-console.log(options)
-
 console.log(`Reading input file ${options.src}`)
 
 function isEqual(a, b) {
