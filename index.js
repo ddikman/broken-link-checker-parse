@@ -30,6 +30,7 @@ let state = 'none'
 let url = ''
 const broken = []
 
+console.log(`Ignoring statuses: ${options.ignore}`)
 var eachLine = util.promisify(lineReader.eachLine);
 eachLine(options.src, function(line) {
     if (state === 'none') {
@@ -67,5 +68,6 @@ eachLine(options.src, function(line) {
   });
   csvWriter.writeRecords(broken)
 
+  console.log(`Written ${broken.length} broken records`)
   console.log('All done!')
 })
